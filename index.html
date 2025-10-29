@@ -21,42 +21,11 @@
         One may ask the cards about their day, but beware, one might get vexed.
         </p>
         <p class="separator">~</p>
-        <div id="clickable-card" onclick="displayRandomImage()">
-            <img id="random-image" src="content/back-of-card.png" alt="Click to draw your card" width="300">
+        <div class="tarot">
+            <img id="backCard" src="content/back-of-card.png" alt="Dos de la carte">
+            <img id="cardImage" style="display:none;">
+            <p id="cardText"></p>
         </div>
-        <script>
-            //image URLS
-            const images = [
-            'content/0-the-fool.png',
-            'content/1-the-magician.png',
-            'content/2-the-high-priestess.png',
-            'content/3-the-empress.png',
-            'content/4-the-emperor.png',
-            'content/5-the-hierophant.png',
-            'content/6-the-lovers.png',
-            'content/7-the-chariot.png',
-            'content/8-strength.png',
-            'content/9-the-hermit.png',
-            'content/10-wheel-of-fortune.png',
-            'content/11-justice.png',
-            'content/12-the-hanged-man.png',
-            'content/13-death.png',
-            'content/14-temperance.png',
-            'content/15-the-devil.png',
-            'content/16-the-tower.png',
-            'content/17-the-star.png',
-            'content/18-the-moon.png',
-            'content/19-the-sun.png',
-            'content/20-judgement.png',
-            'content/21-the-world.png',
-            ]
-            // Function to display a random image
-            function displayRandomImage () {
-                const randomIndex = Math.floor(Math.random() * images.length);
-                const randomImage = images[randomIndex];
-                document.getElementById('random-image').src = randomImage;
-            }
-        </script>
         <h2>
             One may wonder: what does this signify? One can <a href="https://tarottechnique.com/major-arcana-tarot-explained/">click here</a> to understand, or at least try...
         </h2>
@@ -64,6 +33,7 @@
     <footer>
         <p class='footer'>&copy; 2025 Fate Factory</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
